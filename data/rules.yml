@@ -1,0 +1,297 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  conversation_start: false
+  steps:
+  - intent: goodbye_en
+  - action: utter_goodbye_en
+
+- rule: Say kwaheri anytime the user says kwaheri
+  conversation_start: false
+  steps:
+  - intent: goodbye_sw
+  - action: utter_goodbye_sw
+  
+- rule: Say greetings anytime the user says greetings
+  conversation_start: false
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+
+- rule: Say greetings formal type 1 anytime the user says greetings type 1
+  conversation_start: false
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+
+- rule: Say greetings formal type 2 anytime the user says greetings type 2
+  conversation_start: false
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+
+- rule: Say greetings informal type 1 anytime the user says greetings type 1
+  conversation_start: false
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+
+- rule: Say greetings informal type 2 anytime the user says greetings type 2
+  conversation_start: false
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+
+- rule: Say child definition anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_who_child_sw
+  - action: utter_ask_who_child_sw
+
+- rule: Say definition in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_definition_sw
+  - action: utter_ask_definition_sw
+  
+- rule: Say definition anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_definition_en
+  - action: utter_ask_definition_en
+
+- rule: Say causes anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_causes
+  - action: utter_ask_causes
+
+- rule: Say effects anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_effects
+  - action: utter_ask_effects
+
+- rule: Say measures anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_measures
+  - action: utter_ask_measures
+
+- rule: Say perpetrators anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_perpetrators
+  - action: utter_ask_perpetrators
+
+- rule: Say forms anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_forms_sw
+  - action: utter_ask_forms_sw
+
+- rule: Say exploitation in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_exploitation_sw
+  - action: utter_ask_exploitation_sw
+  
+- rule: Say exploitation anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_exploitation_en
+  - action: utter_ask_exploitation_en
+
+- rule: Say emotional in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_emotional_sw
+  - action: utter_ask_emotional_sw
+  
+- rule: Say emotional anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_emotional_en
+  - action: utter_ask_emotional_en
+
+- rule: Say physical in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_physical_sw
+  - action: utter_ask_physical_sw
+  
+- rule: Say physical anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_physical_en
+  - action: utter_ask_physical_en
+
+- rule: Say sexual in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_sexual_sw
+  - action: utter_ask_sexual_sw
+  
+- rule: Say sexual anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_sexual_en
+  - action: utter_ask_sexual_en
+
+- rule: Say about sex in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_what_sex_sw
+  - action: utter_ask_what_sex_sw
+  
+- rule: Say about sex anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_what_sex_en
+  - action: utter_ask_what_sex_en
+
+- rule: Say unwanted sex in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_unwanted_sw
+  - action: utter_ask_unwanted_sw
+  
+- rule: Say unwanted sex anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_unwanted_en
+  - action: utter_ask_unwanted_en
+
+- rule: Say coerced sex in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_coerced_sw
+  - action: utter_ask_coerced_sw
+  
+- rule: Say coerced sex anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_coerced_en
+  - action: utter_ask_coerced_en
+
+- rule: Say forced sex in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_forced_sw
+  - action: utter_ask_forced_sw
+  
+- rule: Say forced sex anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_forced_en
+  - action: utter_ask_forced_en
+
+- rule: Say about touching in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_touching_sw
+  - action: utter_ask_touching_sw
+  
+- rule: Say about touching anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_touching_en
+  - action: utter_ask_touching_en
+
+- rule: Say about fgm in swahili anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_fgm_sw
+  - action: utter_ask_fgm_sw
+  
+- rule: Say about fgm anytime the user asks for it
+  conversation_start: false
+  steps:
+  - intent: ask_fgm_en
+  - action: utter_ask_fgm_en
+
+- rule: Say about interrogative questions anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_interrogative_questions
+  - action: utter_ask_interrogative_questions
+
+- rule: Say about locations anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_locations
+  - action: utter_ask_locations
+
+- rule: Say about victims anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_victims
+  - action: utter_ask_victims
+
+- rule: Say about out_of_scope issues in swahili anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: out_of_scope_sw
+  - action: utter_out_of_scope_sw
+  - action: utter_guidance
+  
+- rule: Say about out_of_scope issues anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: out_of_scope_en
+  - action: utter_out_of_scope_en
+
+- rule: Say about expressions in swahili anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: expressions_sw
+  - action: utter_expressions_sw
+  
+- rule: Say about expressions anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: expressions_en
+  - action: utter_expressions_en
+
+- rule: Say about reporting areas in swahili anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_reporting_area_sw
+  - action: utter_ask_reporting_area_sw
+  
+- rule: Say about reporting areas anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_reporting_area_en
+  - action: utter_ask_reporting_area_en
+
+- rule: Say about advice words in swahili anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_advice_sw
+  - action: utter_ask_advice_sw
+  
+- rule: Say about advice words anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_advice_en
+  - action: utter_ask_advice_en
+  
+- rule: Say about appreciation words anytime the user asks for them
+  conversation_start: false
+  steps:
+  - intent: ask_appreciation
+  - action: utter_appreciation
+
+- rule: Say 'I am a bot' anytime the user challenges
+  conversation_start: false
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+

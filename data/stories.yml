@@ -1,0 +1,925 @@
+version: "2.0"
+
+stories:
+
+- story: child path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_who_child_sw
+  - action: utter_ask_who_child_sw
+
+- story: child path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_who_child_sw
+  - action: utter_ask_who_child_sw
+
+- story: child path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_who_child_sw
+  - action: utter_ask_who_child_sw
+
+- story: child path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_who_child_sw
+  - action: utter_ask_who_child_sw
+
+- story: child path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_who_child_en
+  - action: utter_ask_who_child_en
+
+- story: definition path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_definition_sw
+  - action: utter_ask_definition_sw
+
+- story: definition path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_definition_sw
+  - action: utter_ask_definition_sw
+
+- story: definition path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_definition_sw
+  - action: utter_ask_definition_sw
+
+- story: definition path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_definition_sw
+  - action: utter_ask_definition_sw
+
+- story: definition path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_definition_en
+  - action: utter_ask_definition_en
+
+- story: causes path formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_causes
+  - action: utter_ask_causes
+
+- story: causes path formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_causes
+  - action: utter_ask_causes
+
+- story: causes path informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_causes
+  - action: utter_ask_causes
+
+- story: causes path informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_causes
+  - action: utter_ask_causes
+
+- story: effects path formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_effects
+  - action: utter_ask_effects
+
+- story: effects path formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_effects
+  - action: utter_ask_effects
+
+- story: effects path informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_effects
+  - action: utter_ask_effects
+
+- story: effects path informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_effects
+  - action: utter_ask_effects
+
+- story: measures path formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_measures
+  - action: utter_ask_measures
+
+- story: measures path formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_measures
+  - action: utter_ask_measures
+
+- story: measures path informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_measures
+  - action: utter_ask_measures
+
+- story: measures path informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_measures
+  - action: utter_ask_measures
+
+- story: perpetrators path formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_perpetrators
+  - action: utter_ask_perpetrators
+
+- story: perpetrators path formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_perpetrators
+  - action: utter_ask_perpetrators
+
+- story: perpetrators path informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_perpetrators
+  - action: utter_ask_perpetrators
+
+- story: perpetrators path informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_perpetrators
+  - action: utter_ask_perpetrators
+
+- story: forms path formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_forms_sw
+  - action: utter_ask_forms_sw
+
+- story: forms path formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_forms_sw
+  - action: utter_ask_forms_sw
+
+- story: forms path informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_forms_sw
+  - action: utter_ask_forms_sw
+
+- story: forms path informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_forms_sw
+  - action: utter_ask_forms_sw
+
+- story: exploitation path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_exploitation_sw
+  - action: utter_ask_exploitation_sw
+
+- story: exploitation path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_exploitation_sw
+  - action: utter_ask_exploitation_sw
+
+- story: exploitation path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_exploitation_sw
+  - action: utter_ask_exploitation_sw
+
+- story: exploitation path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_exploitation_sw
+  - action: utter_ask_exploitation_sw
+
+- story: exploitation path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_exploitation_en
+  - action: utter_ask_exploitation_en
+
+- story: emotional path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_emotional_sw
+  - action: utter_ask_emotional_sw
+
+- story: emotional path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_emotional_sw
+  - action: utter_ask_emotional_sw
+
+- story: emotional path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_emotional_en
+  - action: utter_ask_emotional_en
+
+- story: physical path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_physical_sw
+  - action: utter_ask_physical_sw
+
+- story: physical path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_physical_sw
+  - action: utter_ask_physical_sw
+
+- story: physical path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_physical_sw
+  - action: utter_ask_physical_sw
+
+- story: physical path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_physical_sw
+  - action: utter_ask_physical_sw
+
+- story: physical path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_physical_en
+  - action: utter_ask_physical_en
+
+- story: sexual path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_sexual_sw
+  - action: utter_ask_sexual_sw
+
+- story: sexual path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_sexual_sw
+  - action: utter_ask_sexual_sw
+
+- story: sexual path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_sexual_sw
+  - action: utter_ask_sexual_sw
+
+- story: sexual path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_sexual_sw
+  - action: utter_ask_sexual_sw
+
+
+- story: sexual path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_sexual_en
+  - action: utter_ask_sexual_en
+
+- story: sex path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_what_sex_sw
+  - action: utter_ask_what_sex_sw
+
+- story: sex path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_what_sex_sw
+  - action: utter_ask_what_sex_sw
+
+- story: sex path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_what_sex_sw
+  - action: utter_ask_what_sex_sw
+
+- story: sex path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_what_sex_sw
+  - action: utter_ask_what_sex_sw
+
+- story: sex path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_what_sex_en
+  - action: utter_ask_what_sex_en
+
+- story: unwanted path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_unwanted_sw
+  - action: utter_ask_unwanted_sw
+
+- story: unwanted path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_unwanted_sw
+  - action: utter_ask_unwanted_sw
+
+- story: unwanted path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_unwanted_sw
+  - action: utter_ask_unwanted_sw
+
+- story: unwanted path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_unwanted_sw
+  - action: utter_ask_unwanted_sw
+
+- story: unwanted path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_unwanted_en
+  - action: utter_ask_unwanted_en
+
+- story: coerced path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_coerced_sw
+  - action: utter_ask_coerced_sw
+
+- story: coerced path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_coerced_sw
+  - action: utter_ask_coerced_sw
+
+- story: coerced path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_coerced_sw
+  - action: utter_ask_coerced_sw
+
+- story: coerced path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_coerced_sw
+  - action: utter_ask_coerced_sw
+
+- story: coerced path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_coerced_en
+  - action: utter_ask_coerced_en
+
+- story: forced path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_forced_sw
+  - action: utter_ask_forced_sw
+
+- story: forced path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_forced_sw
+  - action: utter_ask_forced_sw
+
+- story: forced path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_forced_sw
+  - action: utter_ask_forced_sw
+
+- story: forced path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_forced_sw
+  - action: utter_ask_forced_sw
+
+- story: forced path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_forced_en
+  - action: utter_ask_forced_en
+
+- story: touching path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_touching_sw
+  - action: utter_ask_touching_sw
+
+- story: touching path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_touching_sw
+  - action: utter_ask_touching_sw
+
+- story: touching path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_touching_sw
+  - action: utter_ask_touching_sw
+
+- story: touching path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_touching_sw
+  - action: utter_ask_touching_sw
+
+- story: touching path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_touching_en
+  - action: utter_ask_touching_en
+
+- story: fgm path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_fgm_sw
+  - action: utter_ask_fgm_sw
+
+- story: fgm path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_fgm_sw
+  - action: utter_ask_fgm_sw
+
+- story: fgm path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_fgm_sw
+  - action: utter_ask_fgm_sw
+
+- story: fgm path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_fgm_sw
+  - action: utter_ask_fgm_sw
+
+- story: fgm path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_fgm_en
+  - action: utter_ask_fgm_en
+
+- story: interrogative path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_interrogative_questions
+  - action: utter_ask_interrogative_questions
+
+- story: interrogative path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_interrogative_questions
+  - action: utter_ask_interrogative_questions
+
+- story: interrogative path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_interrogative_questions
+  - action: utter_ask_interrogative_questions
+
+- story: interrogative path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_interrogative_questions
+  - action: utter_ask_interrogative_questions
+
+- story: locations path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_locations
+  - action: utter_ask_locations
+
+- story: locations path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_locations
+  - action: utter_ask_locations
+
+- story: locations path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_locations
+  - action: utter_ask_locations
+
+- story: locations path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_locations
+  - action: utter_ask_locations
+
+- story: victims path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_victims
+  - action: utter_ask_victims
+
+- story: victims path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_victims
+  - action: utter_ask_victims
+
+- story: victims path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_victims
+  - action: utter_ask_victims
+
+- story: victims path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_victims
+  - action: utter_ask_victims
+
+- story: out_of_scope path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: out_of_scope_sw
+  - action: utter_out_of_scope_sw
+  - action: utter_guidance
+
+- story: out_of_scope path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: out_of_scope_sw
+  - action: utter_out_of_scope_sw
+  - action: utter_guidance
+
+- story: out_of_scope path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: out_of_scope_sw
+  - action: utter_out_of_scope_sw
+  - action: utter_guidance
+
+- story: out_of_scope path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: out_of_scope_sw
+  - action: utter_out_of_scope_sw
+  - action: utter_guidance
+
+- story: out_of_scope path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: out_of_scope_en
+  - action: utter_out_of_scope_en
+
+- story: expressions path sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: expressions_sw
+  - action: utter_expressions_sw
+
+- story: expressions path sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: expressions_sw
+  - action: utter_expressions_sw
+
+- story: expressions path sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: expressions_sw
+  - action: utter_expressions_sw
+
+- story: expressions path sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: expressions_sw
+  - action: utter_expressions_sw
+
+- story: expressions path en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: expressions_en
+  - action: utter_expressions_en
+
+- story: ask reporting area sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_reporting_area_sw
+  - action: utter_ask_reporting_area_sw
+
+- story: ask reporting area sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_reporting_area_sw
+  - action: utter_ask_reporting_area_sw
+
+- story: ask reporting area sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_reporting_area_sw
+  - action: utter_ask_reporting_area_sw
+
+- story: ask reporting area sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_reporting_area_sw
+  - action: utter_ask_reporting_area_sw
+
+- story: ask reporting area en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_reporting_area_en
+  - action: utter_ask_reporting_area_en
+
+- story: ask advice sw formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: ask_advice_sw
+  - action: utter_ask_advice_sw
+
+- story: ask advice sw formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: ask_advice_sw
+  - action: utter_ask_advice_sw
+
+- story: ask advice sw informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: ask_advice_sw
+  - action: utter_ask_advice_sw
+
+- story: ask advice sw informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: ask_advice_sw
+  - action: utter_ask_advice_sw
+
+- story: ask advice en
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: ask_advice_en
+  - action: utter_ask_advice_en
+  
+- story: appreciation formal 1
+  steps:
+  - intent: greet_sw_formal_1
+  - action: utter_greet_sw_formal_1
+  - action: utter_guidance
+  - intent: appreciation
+  - action: utter_appreciation
+  
+- story: appreciation formal 2
+  steps:
+  - intent: greet_sw_formal_2
+  - action: utter_greet_sw_formal_2
+  - action: utter_guidance
+  - intent: appreciation
+  - action: utter_appreciation
+  
+- story: appreciation informal 1
+  steps:
+  - intent: greet_sw_informal_1
+  - action: utter_greet_sw_informal_1
+  - action: utter_guidance
+  - intent: appreciation
+  - action: utter_appreciation
+  
+- story: appreciation informal 2
+  steps:
+  - intent: greet_sw_informal_2
+  - action: utter_greet_sw_informal_2
+  - action: utter_guidance
+  - intent: appreciation
+  - action: utter_appreciation
+
+- story: sad path 1
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet_en
+  - action: utter_greet_en
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye_en
+

@@ -1,0 +1,292 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet_sw_formal_1:
+    use_entities: true
+- greet_sw_formal_2:
+    use_entities: true
+- greet_sw_informal_1:
+    use_entities: true
+- greet_sw_informal_2:
+    use_entities: true
+- greet_en:
+    use_entities: true
+- goodbye_sw:
+    use_entities: true
+- goodbye_en:
+    use_entities: true
+- ask_who_child_sw:
+    use_entities: true
+- ask_who_child_en:
+    use_entities: true
+- ask_definition_sw:
+    use_entities: true
+- ask_definition_en:
+    use_entities: true
+- ask_causes:
+    use_entities: true
+- ask_effects:
+    use_entities: true
+- ask_measures:
+    use_entities: true
+- ask_perpetrators:
+    use_entities: true
+- out_of_scope_sw:
+    use_entities: true
+- out_of_scope_en:
+    use_entities: true
+- expressions_sw:
+    use_entities: true
+- expressions_en:
+    use_entities: true
+- ask_emotional_sw:
+    use_entities: true
+- ask_emotional_en:
+    use_entities: true
+- ask_physical_sw:
+    use_entities: true
+- ask_physical_en:
+    use_entities: true
+- ask_sexual_sw:
+    use_entities: true
+- ask_sexual_en:
+    use_entities: true
+- ask_unwanted_sw:
+    use_entities: true
+- ask_unwanted_en:
+    use_entities: true
+- ask_coerced_sw:
+    use_entities: true
+- ask_coerced_en:
+    use_entities: true
+- ask_forced_sw:
+    use_entities: true
+- ask_forced_en:
+    use_entities: true
+- ask_touching_sw:
+    use_entities: true
+- ask_touching_en:
+    use_entities: true
+- ask_fgm_sw:
+    use_entities: true
+- ask_fgm_en:
+    use_entities: true
+- ask_interrogative_questions:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_victims:
+    use_entities: true
+- ask_what_sex_sw:
+    use_entities: true
+- ask_what_sex_en:
+    use_entities: true
+- ask_locations:
+    use_entities: true
+- ask_who_orphan_en:
+    use_entities: true
+- ask_who_orphan_sw:
+    use_entities: true
+- ask_forms_sw:
+    use_entities: true
+- ask_forms_en:
+    use_entities: true
+- ask_reporting_area_sw:
+    use_entities: true
+- ask_reporting_area_en:
+    use_entities: true
+- ask_advice_sw:
+    use_entities: true
+- ask_advice_en:
+    use_entities: true
+- appreciation:
+    use_entities: true
+- ask_exploitation_sw:
+    use_entities: true
+- ask_exploitation_en:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet_sw_formal_1:
+  - text: Njema! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Salama! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Safi! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Nzuri! Niulize chochote kuhusu ukatili kwa watoto.
+  utter_greet_sw_formal_2:
+  - text: Naendelea vizuri! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Naendelea vizuri tu! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Vizuri! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Vizuri tu! Niulize chochote kuhusu ukatili kwa watoto.
+  utter_greet_sw_informal_1:
+  - text: Poa! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Freshi! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Safi! Niulize chochote kuhusu ukatili kwa watoto.
+  utter_greet_sw_informal_2:
+  - text: Mimi ni mzima! Niulize chochote kuhusu ukatili kwa watoto.
+  - text: Mimi ni mzima wa afya! Niulize chochote kuhusu ukatili kwa watoto.
+  utter_greet_en:
+  - text: Hello! Ask anything about child violence.
+  - text: Hi! Ask anything about child violence.
+  - text: Hey! Ask anything about child violence.
+  utter_ask_who_child_sw:
+  - text: mtoto ni mtu yeyote mwenye umri chini ya miaka 18
+  utter_ask_who_child_en:
+  - text: any person under the age of 18
+  utter_ask_who_orphan_sw:
+  - text: Yatima ni mtu yoyote aliye chini ya umri wa miaka 18 aliyefiwa na mzazi mmoja au wote wawili.
+  utter_ask_who_orphan_en:
+  - text: Orphan is any person who lost one or both parents before the age of 18
+  utter_ask_definition_sw:
+  - text: Ukatili kwa mtoto ni unyanyasaji wa aina yoyote unaoweza kutokea kabla ya mtoa taarifa (mtoto aliyefanyiwa kitendo hicho) hajatimiza umri wa miaka 18.
+  - text: Ukatili kwa watoto ni unyanyasaji wa aina yoyote unaoweza kutokea kabla ya mtoa taarifa (mtoto aliyefanyiwa kitendo hicho) hajatimiza umri wa miaka 18.
+  utter_ask_definition_en:
+  - text: Childhood violence refers to any violence experienced before the respondent turned 18 years old.
+  - text: Child violence refers to any violence experienced before the respondent turned 18 years old.
+  - text: Violence against children refers to any violence experienced before the respondent turned 18 years old.
+  utter_ask_causes:
+  - text: Ukatili kwa watoto husababishwa na mambo mbalimbali kama vile hali duni ya maisha (umaskini), tamaa za mwili, nafasi (cheo) ya mtu
+  - text: Ukatili kwa watoto husababishwa na namna mtu alivyolelewa hasa kama alilelewa vibaya, kutokuwa na hofu ya Mungu, tabia mbaya ya mtu binafsi, kutojua au kutokuzingatia haki za mtoto, kuwa na uelewa duni wa sheria zinazomlinda mtoto.
+  - text: Ukatili kwa watoto husababishwa hasira ya mzazi au mlezi, ukosefu wa msaada kutoka kwa jamii au mmoja wa mzazi, ujinga wa mtu au jamii.
+  utter_ask_effects:
+  - text: Mtoto anaweza akapata matatizo ya kiafya mfano magonjwa ya kuambukiza, matatizo ya kisaikolojia, mtoto anaweza asiwe na heshima tena mbele ya watu wazima.
+  - text: Mtoto anakuwa na utendaji kazi duni, mtoto anaweza akaacha shule kabisa, mtoto anaweza akajihusisa kwenye uhalifu au uasi, mtoto anaweza akakimbia mbali na nyumbani kwao.
+  utter_ask_measures:
+  - text: Elimu inayomuhusu mtoto itolewe kwa jamii nzima, watu anaofanya ukatili kwa watoto wakamatwe na hatua kali za sheria zichukuliwe juu yao.
+  - text: Elimu kuhusu mtoto itolewe kwa kila mtu katika jamii, serikali iwachukulie hatua kali za kisheria kwa watu anaofanya ukatili kwa watoto ili haki itendeke.
+  utter_ask_interrogative_questions:
+  - text: Hapana, mimi ni roboti sijawahi kufanyiwa ukatili wa aina yoyote
+  utter_ask_forms_sw:
+  - text: Kuna aina tatu za ukatili kwa watoto kama vile ukatili wa kimwili, ukatili wa kijinsia na ukatili wa kihisia
+  utter_ask_exploitation_sw:
+  - text: Unyanyaswaji kijinsia utotoni ni ukatili unaopelekea watoto kupokea pesa au vitu ili wafanye ngono.
+  - text: Unyanyaswaji kijinsia utotoni ni ukatili unaopelekea yoyote mwenye umri wa chini ya miaka 18 kupokea pesa au vitu ili afanye ngono.
+  utter_ask_exploitation_en:
+  - text: Child Sexual Exploitation refers to any violence that pushes children receiving money or goods in exchange for sex.
+  - text: Child Sexual Exploitation refers to any violence that pushes any person under 18 to receive money or goods in exchange for sex.
+  utter_ask_emotional_sw:
+  - text: Ukatili wa kiakili kama vile kuitwa majina mabaya, kuonyeshwa kwamba hutakiwi, au kutishiwa kuachwa au kutelekezwa.
+  - text: Ukatili wa kiakili ni aina ya ukatili unahusisha kitendo kama vile kuitwa majina mabaya, kuonyeshwa kwamba hutakiwi, au kutishiwa kuachwa au kutelekezwa.
+  utter_ask_emotional_en:
+  - text: Emotional violence such as being called bad names, being made to feel unwanted, or being threatened with abandonment.
+  - text: Emotional violence is a form of violence that includes an action for example being called bad names, being made to feel unwanted, or being threatened with abandonment.
+  utter_ask_physical_sw:
+  - text: Ukatili wa kimwili kama vile kupigwa kofi, kusukumwa, kupigwa ngumi, kuchapwa au kutishiwa na silaha kama bunduki au kisu.
+  - text: Ukatili wa kimwili ni aina ya ukatili unahusisha vitendo kama vile kupigwa kofi , kusukumwa, kupigwa ngumi, kuchapwa au kutishiwa na silaha kama bunduki au kisu.
+  utter_ask_physical_en:
+  - text: Physical violence such as being slapped, pushed, hit with a fist (punched), kicked, or whipped, or threatened with a weapon such as a gun or knife.
+  - text: Physical violence is a form of violence that includes an action for example being slapped, pushed, hit with a fist (punched), kicked, or whipped, or threatened with a weapon such as a gun or knife.
+  utter_ask_sexual_sw:
+  - text: Ukatili wa kijinsia ni tendo analotendewa mtu mwingine bila ridhaa yake ambalo linajumuisha makosa ya kujamiiana bila ridhaa (kubaka), jaribio la kujamiiana bila ridhaa, kumgusa kijinsia pasipo ridhaa au kutomasa (kumgusa mtu sehemu asizotaka), na unyanyasaji bila kugusana (k.m. vitisho vya kutumia nguvu kijinsia, ujitwazaji kingono, kubugudhi kwa maneno ya kijinsia).
+  utter_ask_sexual_en:
+  - text: Sexual violence is any sexual act that is perpetrated against someone’s will and encompasses a range of offenses, including a completed nonconsensual sex act (i.e., rape), attempted nonconsensual sex acts, abusive sexual contact (i.e., unwanted touching), and non-contact sexual abuse (e.g., threatened sexual violence, exhibitionism, verbal sexual harassment).
+  utter_ask_unwanted_sw:
+  - text: Jaribio la kujamiiana bila ridhaa ni tendo ambalo mkosaji anajaribu kujamiiana na mtu asiyeridhia, lakini bila mkosaji kufanikiwa.
+  utter_ask_unwanted_en:
+  - text: Attempted Unwanted Intercourse is an act by which a perpetrator tried to make the respondent have sexual intercourse when he or she did not want to, but the assailant did not succeed in doing so.
+  utter_ask_coerced_sw:
+  - text: Kujamiiana kwa kulazimishwa ni tendo ambalo mkosaji anapomshinikiza au kumlazimisha mwenzi wa kike au kiume kufanya ngono kinyume cha matakwa yake. Kwa mfano, mwenzi anapojamiiana bila kutaka kwa sababu ya mabishano na kushinikizwa.
+  utter_ask_coerced_en:
+  - text: Coerced intercourse is an act by which a perpetrator pressured or non-physically forced the respondent to have sexual intercourse against his or her will. For instance, the respondent had unwanted sexual intercourse because he or she felt overwhelmed by continual arguments and pressure.
+  utter_ask_forced_sw:
+  - text: Kujamiiana kwa nguvu ni tendo ambalo mkosaji anapotumia nguvu za kimwili kumlazimisha mwenzi wake kufanya ngono.
+  utter_ask_forced_en:
+  - text: Physically Forced Intercourse is an act by which a perpetrator physically forced the respondent to have sexual intercourse against his or her will.
+  utter_ask_touching_sw:
+  - text: Mwenzi kuguswa bila ridhaa yake ni tendo ambalo mkosaji anapomgusa mwingine bila ridhaa yake kijinsia, kwa mfano anapomgusa bila anaeguswa kutaka, kubusu bila ridhaa, kukamata au kutomasa bila ridhaa lakini bila kujaribu kumlazimisha kufanya ngono.
+  utter_ask_touching_en:
+  - text: Unwanted Touching of Respondent is an act by which a perpetrator touched the respondent against his or her will in a sexual way, such as unwanted touching, kissing, grabbing, or fondling, but did not try to force him or her to have sexual intercourse.
+  utter_ask_fgm_sw:
+  - text: Tohara ya wanawake/Ukeketaji ni aina zote zinazotumika kukata au kukeketa sehemu ya uke yote, au kidogo, ya au kujeruhi kwa njia nyingine sehemu za uke kwa sababu ambazo si za kitabibu au kiafya.
+  utter_ask_fgm_en:
+  - text: Female Genital Mutilation/Cutting refers to all procedures involving the partial or total removal of the external female genitalia or other injury to the female genital organs for non-medical reasons.
+  utter_ask_perpetrators:
+  - text: Jamii inayomzunguka pamoja na majirani
+  - text: Wazazi hasa wakina baba, ndugu au jamaa wa karibu
+  - text: Wazazi, walezi, walimu, watu wa rika moja, majirani
+  - text: Dada wa kaka au kaka wa kazi
+  - text: Watoto wenzake wakina wanacheza shuleni au nyumbani
+  - text: Watu wenye mamlaka juu ya watoto mfano walimu
+  utter_ask_locations:
+  - text: Ukatili unaweza kutokea nyumbani, shuleni, mtaani na mtandaoni
+  utter_ask_victims:
+  - text: Ukatili huathiri watoto wote. Lakini makundi ya watoto wanaokabiliwa na hatari kubwa zaidi ni kama yafuatayo; watoto wanaoishi na ulemavu au VVU na UKIMWI, watoto wanaoishi katika familia zenye umaskini uliokithiri, watoto wanaoishi katika kituo cha kulelea watoto, watoto waliotengwa na familia zao, watoto wahamiaji na watoto wakimbizi au wanaotafuta hifadhi.
+  utter_ask_what_sex_sw:
+  - text: Kujamiiana ni pale ambapo uume wa mwanaume unapoingia kwenye uke au sehemu ya nyuma wa mwingine, hata kama unaingia kidogo tu.
+  - text: Kujamiiana kwa wanawake (inapotumika kwa ukatili wa kijinsia) ni pamoja na mtu kumuingilia mwanamke kwenye uke au sehemu ya nyuma na uume wake, mikono yake, vidole vyake, mdomo wake au kitu chochote au kumuingilia mdomoni na uume wake.
+  - text: Kujamiiana kwa wanaume (inapotumika kwa ukatili wa kijinsia) ni pamoja na mtu kumuingilia mwanaume sehemu ya nyuma na uume wake, mikono yake, mdomo wake, au vitu vingine au kuingiza uume wa mtu mwingine mdomoni mwake; hii inaweza kuwa pamoja na kuingiza uume wa mwanaume bila ridhaa yake kwenye mdomo, uke au sehemu ya nyuma wa mwingine.
+  utter_ask_what_sex_en:
+  - text: Sex or sexual intercourse refers to anytime a male’s penis enters someone else’s vagina or anus, however slight.
+  - text: Sexual Intercourse for Females (as used when describing acts of sexual violence) includes someone penetrating a female’s vagina or anus with their penis, hands, fi ngers, mouth, or other objects, or penetrating her mouth with their penis.
+  - text: Sexual Intercourse for Males (as used when describing acts of sexual violence) includes someone penetrating a male’s anus with their penis, hands, fi ngers, mouth, or other objects, or penetrating his mouth with their penis; this can also include someone forcing the male’s penis into their mouth, vagina, or anus.
+  utter_guidance:
+  - text: Kwa mfano maana ya ukatili kwa watoto, aina za ukatili kwa watoto, chanzo cha ukatili kwa watoto, madhara ya ukatili kwa watoto, namna ya kuzuia ukatili kwa watoto na kadhalika
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_out_of_scope_sw:
+  - text: Samahani sijakuelewa tafadhali rudia tena ulichoandika au niulize chochote kuhusu ukatili kwa watoto
+  - text: Samahani sijaelewa ulichoandika tafadhali rudia tena ulichoandika au niulize chochote kuhusu ukatili kwa watoto
+  utter_out_of_scope_en:
+  - text: Sorry, please repeat or ask me anything about child violence
+  - text: Sorry, I have not understood. Please repeat or ask me anything about child violence
+  - text: Sorry, I did not get you. Please repeat or ask me anything about child violence
+  utter_expressions_sw:
+  - text: Asante, niulize chochote kuhusu ukatili kwa watoto
+  utter_expressions_en:
+  - text: Thanks, ask me anything about child violence
+  - text: Thank you, ask me anything about child violence
+  utter_ask_reporting_area_sw:
+  - text: Unaweza ukaripoti kwenye kituo cha polisi kitengo cha dawati la jinsia kilicho karibu yako
+  - text: Unaweza kutoa taarifa katika kituo cha polisi kitengo cha dawati la jinsia kilicho karibu yako
+  utter_ask_reporting_area_en:
+  - text: You can report any child violence case at the nearby police station in the department of gender desk
+  - text: report at the nearby police station specifically in the department of gender desk
+  utter_ask_advice_sw:
+  - text: Unatakiwa kuripoti kituo cha polisi kilicho karibu yako 
+  - text: Unatakiwa kutoa taarifa katika kituo cha polisi kilicho karibu yako 
+  utter_ask_advice_en:
+  - text: You can report at the nearby police station 
+  - text: report at the nearby police station
+  utter_appreciation:
+  - text: karibu tena
+  - text: karibu tena wakati mwingine
+  - text: karibu tena wakati wowote
+  - text: asante kwa kushukuru
+  - text: asante pia kwa muda wako
+  - text: karibu wakati mwingine
+  - text: unakaribishwa sana muda wowote
+  - text: unakaribishwa mno muda wowote
+  - text: unakaribishwa muda wowote
+  - text: shukrani pia kwa muda wako
+  - text: asante pia
+  - text: nawe pia asante sana
+  - text: nawe pia asante mno
+  utter_goodbye_sw:
+  - text: Kwa kheri, karibu tena
+  - text: Kwa kheri, karibu wakati mwingine
+  - text: Kwa kheri, tutaonana wakati mwingine
+  utter_goodbye_en:
+  - text: Bye
+  - text: Bye, see you soon
+  utter_iamabot:
+  - text: I am a bot, developed by Blessing Rweikiza.
+actions: []
+forms: {}
+e2e_actions: []

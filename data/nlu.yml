@@ -1,0 +1,584 @@
+version: "2.0"
+nlu:
+- intent: greet_sw_formal_1
+  examples: |
+    - habari
+    - habari za saizi
+    - habari za saa hizi
+    - za saa hizi
+    - za saizi
+    - za kwako
+    - habari yako
+    - za asubuhi
+    - za jioni
+    - za mchana
+    - habari za jioni
+    - habari za asubuhi
+    - habari za mchana
+    - habari jamani
+    - habari ya kutwa
+    - habari za kushinda
+    - habari za wakati huu
+    - za kutwa, za kushinda
+    - za wakati huu
+    - habari za siku nyingi
+    - wa hali gani
+- intent: greet_sw_formal_2
+  examples: |
+    - unaendeleaje 
+    - unajisikiaje
+- intent: greet_sw_informal_1
+  examples: |
+    - mambo
+    - niaje
+    - adje
+    - aje
+    - inakuaje
+    - vipi
+    - oya fresh
+    - oya kwema
+    - oya
+    - oi
+    - oy
+- intent: greet_sw_informal_2
+  examples: |
+    - mzima
+    - mzma
+    - mzm
+- intent: greet_en
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye_sw
+  examples: |
+    - kwa heri
+    - nitakucheki baadaye
+    - baadaye
+    - kwa kheri
+    - mungu akipenda
+    - kwaheri
+    - kwakheri
+    - kwa heli
+    - kwa kheli
+    - naondoka
+    - nakuaga
+    - tutaonana baadaye
+- intent: goodbye_en
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you la
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: out_of_scope_sw
+  examples: |
+    - acha ujinga
+    - fala
+    - acha ufala
+    - pumbavu
+    - imba
+- intent: out_of_scope_en
+  examples: |
+    - you are an idiot
+    - you are stupid
+    - you are crazy
+    - you are insane
+- intent: expressions_sw
+  examples: |
+    - nakupenda
+    - nakuchukia
+    - sikupendi
+- intent: expressions_en
+  examples: |
+    - i love you
+    - i hate you
+    - you are boring
+- intent: ask_who_child_sw
+  examples: |
+    - nini maana ya mtoto
+    - maana halisi ya mtoto
+    - maana ya mtoto
+    - nieleze maana ya mtoto
+    - nipe maana ya mtoto
+    - nipatie maana ya mtoto
+    - mtoto ni nani
+    - mtoto ni mtu gani
+    - mtoto mwisho miaka mingapi
+- intent: ask_who_child_en
+  examples: |
+    - who is a child
+    - define a child
+    - definition of a child
+    - tell me about a child
+    - give me a definition of a child
+    - tell me more about a child
+    - maximum age of a child
+    - age range of a child
+- intent: ask_who_orphan_sw
+  examples: |
+    - nini maana ya yatima
+    - maana halisi ya yatima
+    - maana ya yatima
+    - nieleze maana ya yatima
+    - nipe maana ya yatima
+    - nipatie maana ya yatima
+    - yatima ni nani
+    - yatima ni mtu gani
+- intent: ask_who_orphan_en
+  examples: |
+    - who is a orphan
+    - define a orphan
+    - definition of a orphan
+    - tell me about a orphan
+    - give me a definition of a orphan
+    - tell me more about a orphan
+- intent: ask_definition_sw
+  examples: |
+    - ukatili kwa watoto ni nini
+    - ukatili ni nini
+    - ukatili wa utotoni ni nini
+    - ukatili kwa mtoto ni nini
+    - unyanyasaji wa watoto ni nini
+    - unyanyasaji wa mtoto ni nini
+    - nini maana ya ukatili kwa watoto
+    - nini maana ya ukatili kwa mtoto
+    - nini maana ya ukatili wa utotoni
+    - nini maana ya unyanyasaji wa watoto
+    - nini maana ya unyanyasaji wa mtoto
+    - ukatili kwa watoto unamaanisha nini
+    - ukatili kwa mtoto unamaanisha nini
+    - ukatili wa utotoni unamaanisha nini
+    - unyanyasaji wa watoto unamaanisha nini
+    - unyanyasaji kwa mtoto unamaanisha nini
+    - ukatili kwa watoto una maana gani
+    - ukatili kwa mtoto una maana gani
+    - ukatili wa utotoni una maana gani
+    - unyanyasaji wa watoto una maana gani
+    - unyanyasaji kwa mtoto una maana gani
+    - naomba ufafanuzi juu ya ukatili kwa watoto
+    - niambie kuhusu ukatili kwa watoto
+    - nijuze kuhusu ukatili kwa watoto
+    - maana ya ukatili kwa watoto
+- intent: ask_definition_en
+  examples: |
+    - what is child violence
+    - what is child maltreatment
+    - what is violence against children
+    - what does it mean by the term child violence
+    - what does it mean by the term child maltreatment
+- intent: ask_causes
+  examples: |
+    - ukatili kwa watoto unasababishwa na nini hasa
+    - ukatili kwa mtoto unasababishwa na nini hasa
+    - unyanyasaji wa watoto unasababishwa na nini hasa
+    - unyanyasaji wa mtoto unasababishwa na nini hasa
+    - nini chanzo cha ukatili kwa watoto
+    - nini chanzo cha ukatili kwa mtoto
+    - nini chanzo cha unyanyasaji wa watoto
+    - nini chanzo cha unyanyasaji wa mtoto
+    - chanzo cha ukatili kwa watoto
+    - sababu za ukatili kwa watoto ni zipi hizo
+    - sababu za ukatili kwa mtoto ni zipi hizo
+    - sababu za unyanyasaji wa watoto ni zipi hizo
+    - sababu za unyanyasaji wa mtoto ni zipi hizo
+    - kwa nini watoto wananyanyaswa
+    - kwa nini mtoto ananyanyaswa
+    - nini kinapelekea watoto kunyanyaswa
+    - nini kinapelekea mtoto kunyanyaswa
+    - nini kinapelekea mpaka watoto wananyanyaswa
+    - nini kinapelekea mpaka mtoto ananyanyaswa
+    - nini kinapelekea mpaka watoto wanafanyiwa ukatili
+    - nini kinapelekea mpaka mtoto anafanyiwa ukatili
+    - nini kinapelekea mpaka watoto wanafanyiwa vitendo vya kikatili
+    - nini kinapelekea mpaka mtoto anafanyiwa vitendo vya kikatili
+    - kwa nini watu wanawanyanyasa watoto
+    - kwa nini mtu anamnyanyasa mtoto
+    - kwa nini watu wanafanya vitendo vya kikatili kwa watoto
+    - kwa nini mtu anafanya vitendo vya kikatili kwa mtoto
+    - kwa nini mtu anafanya ukatili kwa mtoto
+    - kwa nini watu wanafanya ukatili kwa watoto
+    - lengo la kumnyanyasa mtoto ni lipi
+    - lengo la kuwanyanyasa watoto ni lipi
+- intent: ask_effects
+  examples: |
+    - madhara ya ukatili kwa watoto
+    - matokeo ya ukatili kwa watoto
+    - ni madhara gani mtoto atapata baada ya kufanyiwa ukatili
+    - ni madhara gani watoto watapata baada ya kufanyiwa ukatili
+    - ni madhara gani mtoto atapata baada ya kufanyiwa vitendo vya kikatili
+    - ni madhara gani watoto watapata baada ya kunyanyaswa
+    - ni madhara gani mtoto atapata baada ya kunyanyaswa
+    - ni madhara gani hasa mtoto atapata baada ya kufanyiwa ukatili
+    - ni madhara gani hasa watoto watapata baada ya kufanyiwa ukatili
+    - ni madhara gani hasa mtoto atapata baada ya kufanyiwa vitendo vya kikatili
+    - ni madhara gani hasa watoto watapata baada ya kunyanyaswa
+    - ni madhara gani hasa mtoto atapata baada ya kunyanyaswa
+    - ni mambo gani yanayompata mtoto baada ya kufanyiwa vitendo vya kikatili
+    - ni mambo gani yanayowapata watoto baada ya kufanyiwa vitendo vya kikatili
+    - ni mambo gani yanayompata mtoto baada ya kunyanyaswa
+    - ni mambo gani yanayowapata watoto baada ya kunyanyaswa
+    - ni nini matokeo yanayomkumba mtoto akishafanyiwa ukatili
+    - ni nini matokeo yanayowakumba watoto wakishafanyiwa ukatili
+    - ni nini matokeo yanayowakumba watoto wakishafanyiwa vitendo vya kikatili
+    - ni nini matokeo yanayomkumba mtoto akishafanyiwa vitendo vya kikatili
+- intent: ask_measures
+  examples: |
+    - nini kifanyike kukomesha vitendo vya kikatili kwa watoto katika jamii zetu
+    - nini kifanyike kukomesha vitendo vya kikatili kwa mtoto katika jamii zetu
+    - nini kifanyike kukomesha ukatili kwa mtoto katika jamii zetu
+    - nini kifanyike kudhibiti vitendo vya kikatili kwa watoto katika jamii zetu
+    - nini kifanyike kudhibiti vitendo vya kikatili kwa mtoto katika jamii zetu
+    - nini kifanyike kudhibiti ukatili kwa mtoto katika jamii zetu
+    - nini kifanyike kuzuia vitendo vya kikatili kwa watoto katika jamii zetu
+    - nini kifanyike kuzuia vitendo vya kikatili kwa mtoto katika jamii zetu
+    - nini kifanyike kuzuia ukatili kwa mtoto katika jamii zetu
+    - nini kifanyike kupunguza vitendo vya kikatili kwa watoto katika jamii zetu
+    - nini kifanyike kupunguza vitendo vya kikatili kwa mtoto katika jamii zetu
+    - nini kifanyike kupunguza ukatili kwa mtoto katika jamii zetu
+    - nini kifanyike kupunguza kwa kiasi kikubwa vitendo vya kikatili kwa watoto katika jamii zetu
+    - nini kifanyike kupunguza kwa kiasi kikubwa vitendo vya kikatili kwa mtoto katika jamii zetu
+    - nini kifanyike kupunguza kwa kiasi kikubwa ukatili kwa mtoto katika jamii zetu
+    - ni mambo gani yafanywe ili kukomesha ukatili kwa watoto
+    - ni mambo gani yafanywe ili kukomesha ukatili kwa mtoto
+    - ni mambo gani yafanywe ili kukomesha unyanyasaji kwa watoto
+    - ni mambo gani yafanywe ili kukomesha unyanyasaji kwa mtoto
+    - namna ya kuzuia ukatili kwa watoto
+    - namna ya kudhibiti ukatili kwa watoto
+    - namna ya kukomesha ukatili kwa watoto
+    - unazuiaje ukatili kwa watoto
+    - ninawezaje kuzuia ukatili kwa watoto
+- intent: ask_perpetrators
+  examples: |
+    - nani anaweza kufanya ukatili kwa watoto
+    - ni wakina nani anafanya ukatili kwa watoto
+    - watoto wanafanyiwa ukatili au unyanyasaji na wakina nani
+- intent: ask_forms_sw
+  examples: |
+    - nini aina za ukatili kwa watoto
+    - aina za ukatili kwa watoto
+    - aina za unyanyasaji wa watoto
+    - nitajie aina za ukatili kwa watoto
+    - niambie kuhusu aina za ukatili kwa watoto
+    - kuna aina ngapi za ukatili
+    - kuna aina ngapi za ukatili kwa watoto
+    - kuna aina ngapi za ukatili kwa mtoto
+    - aina ngapi za ukatili
+    - aina ngapi za ukatili kwa watoto
+    - aina ngapi za ukatili kwa mtoto
+- intent: ask_forms_en
+  examples: |
+    - what are the forms of child violence
+    - forms of childhood violence
+    - types of child violence
+    - kinds of child violence
+- intent: ask_exploitation_sw
+  examples: |
+    - nini maana ya unyanyaswaji kijinsia utotoni
+    - unyanyaswaji kijinsia utotoni ni nini
+    - ni nini maana ya ukatili wa kijinsia utotoni
+    - ni nini maana ya unyanyasaji wa kijinsia utotoni
+    - ni nini fasili ya unyanyaswaji kijinsia utotoni
+- intent: ask_exploitation_en
+  examples: |
+    - what is child sexual exploitation
+    - what does it mean by the term child sexual exploitation
+    - child sexual exploitation
+    - how does child sexual exploitation take place
+- intent: ask_emotional_sw
+  examples: |
+    - wa kihisia una maana ipi
+    - nini maana ya ukatili wa kihisia
+    - unyanyaswaji kihisia utotoni ni nini
+    - ni nini maana ya ukatili wa kihisia utotoni
+    - ni nini maana ya unyanyasaji wa kihisia utotoni
+    - ni nini fasili ya unyanyaswaji kihisia utotoni
+    - mifano ya ukatili wa kihisia
+    - mifano ya unyanyasaji wa kihisia
+    - naomba ufafanuzi juu ya ukatili wa kihisia
+- intent: ask_emotional_en
+  examples: |
+    - what is emotional violence
+    - what does it mean by the term emotional violence
+    - meaning of emotional violence
+    - examples of emotional violence
+- intent: ask_physical_sw
+  examples: |
+    - nini maana ya ukatili wa kimwili
+    - wa kimwili una maana ipi
+    - unyanyaswaji kimwili utotoni ni nini
+    - ni nini maana ya ukatili wa kimwili utotoni
+    - ni nini maana ya unyanyasaji wa kimwili utotoni
+    - ni nini fasili ya unyanyaswaji kimwili utotoni
+    - mifano ya ukatili wa kimwili
+    - mifano ya unyanyasaji wa kimwili
+    - naomba ufafanuzi juu ya ukatili wa kimwili
+    - je kupigwa ni ukatili
+- intent: ask_physical_en
+  examples: |
+    - what is physical violence
+    - what does it mean by the term physical violence
+    - meaning of physical violence
+    - examples of physical violence
+- intent: ask_sexual_sw
+  examples: |
+    - nini maana ya ukatili wa kijinsia
+    - naomba ufafanuzi juu ya ukatili wa kijinsia
+    - wa kijinsia una maana ipi
+    - unyanyaswaji kijinsia ni nini
+    - ni nini maana ya ukatili wa kijinsia
+    - ni nini maana ya unyanyasaji wa kijinsia
+    - ni nini fasili ya unyanyaswaji kijinsia
+    - mifano ya ukatili wa kijinsia
+    - mifano ya unyanyasaji wa kijinsia
+    - bakwa
+- intent: ask_sexual_en
+  examples: |
+    - what is sexual violence
+    - what does it mean by the term sexual violence
+    - meaning of sexual violence or sexual abuse
+    - examples of sexual violence
+- intent: ask_unwanted_sw
+  examples: |
+    - nini maana ya Jaribio la kujamiiana bila ridhaa
+    - Jaribio la kujamiiana bila ridhaa ni nini
+    - ni nini maana ya Jaribio la kujamiiana bila ridhaa
+    - ni nini fasili ya Jaribio la kujamiiana bila ridhaa
+- intent: ask_unwanted_en
+  examples: |
+    - what is Attempted Unwanted Intercourse
+    - what does it mean by the term Attempted Unwanted Intercourse
+    - meaning of Attempted Unwanted Intercourse
+- intent: ask_coerced_sw
+  examples: |
+    - nini maana ya Kujamiiana kwa kulazimishwa
+    - Kujamiiana kwa kulazimishwa ni nini
+    - ni nini maana ya Kujamiiana kwa kulazimishwa
+    - ni nini fasili ya Kujamiiana kwa kulazimishwa
+    - mifano ya Kujamiiana kwa kulazimishwa
+    - mfano wa Kujamiiana kwa kulazimishwa
+- intent: ask_coerced_en
+  examples: |
+    - what is Coerced intercourse
+    - what does it mean by the term Coerced intercourse
+    - meaning of Coerced intercourse
+    - example of Coerced intercourse
+- intent: ask_forced_sw
+  examples: |
+    - nini maana ya Kujamiiana kwa nguvu
+    - Kujamiiana kwa nguvu ni nini
+    - ni nini maana ya Kujamiiana kwa nguvu
+    - ni nini fasili ya Kujamiiana kwa nguvu
+- intent: ask_forced_en
+  examples: |
+    - what is Physically Forced Intercourse
+    - what does it mean by the term Physically Forced Intercourse
+    - meaning of Physically Forced Intercourse
+- intent: ask_touching_sw
+  examples: |
+    - nini maana ya Mwenzi kuguswa bila ridhaa yake
+    - Mwenzi kuguswa bila ridhaa yake ni nini
+    - ni nini maana ya Mwenzi kuguswa bila ridhaa yake
+    - ni nini fasili ya Mwenzi kuguswa bila ridhaa yake
+    - mfano wa Mwenzi kuguswa bila ridhaa yake
+- intent: ask_touching_en
+  examples: |
+    - what is Unwanted Touching of Respondent
+    - what does it mean by the term Unwanted Touching of Respondent
+    - meaning of Unwanted Touching of Respondent
+    - example of Unwanted Touching of Respondent
+- intent: ask_fgm_sw
+  examples: |
+    - nini maana ya tohara ya wanawake au ukeketaji
+    - tohara ya wanawake au ukeketaji ni nini
+    - ni nini maana ya tohara ya wanawake au ukeketaji
+    - keketwa
+- intent: ask_fgm_en
+  examples: |
+    - what is Female Genital Mutilation/Cutting
+    - what does it mean by the term Female Genital Mutilation/Cutting
+    - Female Genital Mutilation/Cutting
+- intent: ask_interrogative_questions
+  examples: |
+    - ulishawahi kufanyiwa ukatili wowote
+    - ulishafanyiwa unyanyasaji wa aina yoyote
+    - unafanyiwa ukatili wa aina yoyote
+- intent: ask_locations
+  examples: |
+    - ukatili unafanya wapi hasa
+    - ni maeneo gani ukatili unaweza kutokea
+    - ni sehemu gani ukatili unaweza kutokea
+- intent: ask_victims
+  examples: |
+    - ni watoto wa aina gani wanaweza kufanyiwa ukatili
+    - niambie watoto gani wanaweza kufanyiwa ukatili
+    - ukatili wa kijinsia unatokea kwa kundi gani haswa
+    - ukatili wa kimwili unatokea kwa kundi gani haswa
+    - ukatili wa kihisia unatokea kwa kundi gani haswa
+- intent: ask_what_sex_sw
+  examples: |
+    - ni nini maana ya kujamiiana
+    - maana ya kujamiiana
+    - nieleze kuhusu kujamiiana
+    - kujamiiana ni nini
+- intent: ask_what_sex_en
+  examples: |
+    - what is sex
+    - what is sexual intercourse
+    - define sex
+    - what does sex mean
+- intent: ask_reporting_area_sw
+  examples: |
+    - sehemu gani pa kutoa taarifa kuhusu ukatili kwa watoto
+    - naweza kutoa taarifa wapi ili nipate msaada wa hapo kwa papo
+    - mahali pa kuripoti kesi ya ukatili kwa watoto
+    - nataka kuripoti ukatili uliotokea leo
+    - ni jinsi gani na ni wapi naweza kutoa taarifa ama kuripoti kitendo chochote cha kikatili kilichotokea kwa mtoto
+- intent: ask_reporting_area_en
+  examples: |
+    - where can I report child violence
+    - where to report child violence
+    - places to report child violence
+    - where to report a case about child violence
+    - places where child violence cases are reported
+- intent: ask_advice_sw
+  examples: |
+    - nimebakwa nini natakiwa nifanye
+    - kama mtu akibakwa au kulawitiwa nini inatakiwa kifanyike
+    - kuna mtu amebakwa nini tunatakiwa kufanya
+    - nimelawitiwa na mzazi au mlezi nifanye nini
+    - jambo la kufanya mtu akishabakwa au akilawitiwa
+    - ninahitaji ushauri, nimebakwa ninatakiwa kufanya nini
+- intent: ask_advice_en
+  examples: |
+    - what can i do after being raped
+    - what to be done after being raped
+    - i was raped, what can i do
+    - i need an advice, i was rape today what can do
+- intent: appreciation
+  examples: |
+    - asante
+    - asante sana
+    - asante mno
+    - nashukuru
+    - ninashukuru
+    - nashukuru sana
+    - nashukuru mno
+    - ninashukuru sana
+    - ninashukuru mno
+    - asante na Mungu akubariki
+    - asante sana na Mungu akubariki
+    - asante mno na Mungu akubariki 
+    - asante na Mungu akubariki sana
+    - asante sana na Mungu akubariki sana
+    - asante sana na Mungu akubariki mno
+    - asante mno na Mungu akubariki mno
+    - shukrani
+    - shukrani sana
+    - shukrani mno
+    - umenisaidia sana asante
+    - umekuwa msaada sana kwangu
+    - nimefurahi sana kuongea na wewe
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ndio
+    - sawa
+    - ni kweli
+    - sawa kabisa
+    - hakika
+    - upo sawa
+    - upo sawa kabisa
+    - hujakosea
+    - sahihi
+    - upo sahihi kabisa
+    - ni sawa
+    - sawa sawa
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - hapana
+    - haiwezekani
+    - haiwezekani kabisa
+    - hapana kabisa
+    - nadhani
+    - inawezekana
+    - labda ila mimi sijui
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fresh
+    - poa kabisa
+    - nina furaha
+    - nimefurahi
+    - nina amani
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - nina huzuni
+    - nimehuzunika
+    - sina amani kabisa
+    - sijisikii vizuri
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - je wewe ni roboti?
+    - je wewe ni mtu au binadamu?
+    - je ninachati na roboti?
+    - je ninachati na binadamu?
